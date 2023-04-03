@@ -1,0 +1,21 @@
+<div class="header"><span class="title"><b>Virtual Market</b></span></div>
+<div class="flex-grid main-content">
+    <div class="col">
+        <div class="aisle-title"><b>Dairy</b></div>
+        <div class="aisle">
+            <app-indicator *ngFor="let product of productsByCategory.DAIRY" [productName]="product.name" [fillPercent]="product.stockPercent * 100"></app-indicator>
+        </div>
+    </div>
+    <div class="col">
+        <div class="aisle-title"><b>Baked Goods</b></div>
+        <div class="aisle">
+            <app-indicator *ngFor="let product of productsByCategory.BAKED_GOODS" [productName]="product.name" [fillPercent]="product.stockPercent * 100"></app-indicator>
+        </div>
+    </div>
+    <div class="col">
+        <div class="aisle-title"><b>Veggies</b></div>
+        <div class="aisle">
+            <app-indicator *ngFor="let product of productsByCategory.VEGETABLES" [productName]="product.name" [fillPercent]="product.stockPercent * 100"></app-indicator>
+        </div>
+    </div>
+</div>

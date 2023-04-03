@@ -1,0 +1,16 @@
+.container {
+  transform: rotate(-90deg);
+  padding: 10px;
+  height: 95px;
+  width: 95px;
+}
+.indicator {
+  --mdc-linear-progress-track-height: 98px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background: white;
+}
+
+
+.mdc-linear-progress__primary-bar {
+  height:100%;
+}
